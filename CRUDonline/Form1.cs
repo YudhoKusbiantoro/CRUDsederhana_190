@@ -51,5 +51,5 @@ namespace CRUD04on
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-
-}
+                    dgvMahasiswa.AutoGenerateColumns = true;
+                    dgvMahasiswa.DataSource = dt;
