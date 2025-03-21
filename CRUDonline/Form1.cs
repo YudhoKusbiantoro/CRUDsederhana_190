@@ -80,5 +80,7 @@ namespace CRUD04on
                     {
                         cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
                         cmd.Parameters.AddWithValue("@Nama", txtNAMA.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Email", txtEMAIL.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Telepon", txtTELEPON.Text.Trim());
 
 }
