@@ -25,4 +25,13 @@ namespace CRUD04on
             LoadData();
         }
 
+        // Fungsi untuk mengosongkan semua input pada TextBox
+        private void ClearForm()
+        {
+            txtNIM.Clear();
+            txtNAMA.Clear();
+            txtEMAIL.Clear();
+            txtTELEPON.Clear();
+            txtALAMAT.Clear();
+
 }
