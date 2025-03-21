@@ -53,3 +53,7 @@ namespace CRUD04on
 
                     dgvMahasiswa.AutoGenerateColumns = true;
                     dgvMahasiswa.DataSource = dt;
+
+                    ClearForm(); // Auto Clear setelah LoadData
+                }
+}
