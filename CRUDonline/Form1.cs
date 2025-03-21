@@ -46,5 +46,6 @@ namespace CRUD04on
                 try
                 {
                     conn.Open();
-
+                    string query = "SELECT NIM AS [NIM], Nama, Email, Telepon, Alamat FROM Mahasiswa";
+                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
 }
