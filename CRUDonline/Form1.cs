@@ -70,6 +70,9 @@ namespace CRUD04on
                 {
                     if (txtNIM.Text == "" || txtNAMA.Text == "" || txtEMAIL.Text == "" || txtTELEPON.Text == "" || txtALAMAT.Text == "")
                     {
-    }
+                        MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
 
 }
