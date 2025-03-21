@@ -43,5 +43,8 @@ namespace CRUD04on
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                try
+                {
+                    conn.Open();
 
 }
