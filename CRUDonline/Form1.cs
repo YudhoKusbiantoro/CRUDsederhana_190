@@ -17,5 +17,6 @@ namespace CRUD04on
 
         public Form1()
         {
-
+            InitializeComponent();
+        }
 }
