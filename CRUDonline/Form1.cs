@@ -82,5 +82,56 @@ namespace CRUD04on
                         cmd.Parameters.AddWithValue("@Nama", txtNAMA.Text.Trim());
                         cmd.Parameters.AddWithValue("@Email", txtEMAIL.Text.Trim());
                         cmd.Parameters.AddWithValue("@Telepon", txtTELEPON.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Alamat", txtALAMAT.Text.Trim());
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadData();
+                            ClearForm();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Data Tidak berhasil ditambahkan", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void txtNIM_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ubah_click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    if (txtNIM.Text == "" || txtNAMA.Text == "" || txtEMAIL.Text == "" || txtTELEPON.Text == "")
+                    {
+                        MessageBox.Show("Harap isi semua data!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    conn.Open();
+                    string query = "UPDATE Mahasiswa SET Nama = @Nama, Email = @Email, Telepon = @Telepon, Alamat = @Alamat WHERE NIM = @NIM";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Nama", txtNAMA.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Email", txtEMAIL.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Telepon", txtTELEPON.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Alamat", txtALAMAT.Text.Trim());
+
+                       
 
 }
