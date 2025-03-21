@@ -56,4 +56,9 @@ namespace CRUD04on
 
                     ClearForm(); // Auto Clear setelah LoadData
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
 }
