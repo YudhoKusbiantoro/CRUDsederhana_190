@@ -19,4 +19,7 @@ namespace CRUD04on
         {
             InitializeComponent();
         }
+        // Event saat form pertama kali dimuat
+        private void Form1_Load(object sender, EventArgs e)
+        {
 }
