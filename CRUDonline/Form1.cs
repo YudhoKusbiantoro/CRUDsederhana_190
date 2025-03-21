@@ -66,4 +66,10 @@ namespace CRUD04on
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                try
+                {
+                    if (txtNIM.Text == "" || txtNAMA.Text == "" || txtEMAIL.Text == "" || txtTELEPON.Text == "" || txtALAMAT.Text == "")
+                    {
+    }
+
 }
