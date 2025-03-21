@@ -64,5 +64,6 @@ namespace CRUD04on
         }
         private void Tambah_click(object sender, EventArgs e)
         {
-
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
 }
