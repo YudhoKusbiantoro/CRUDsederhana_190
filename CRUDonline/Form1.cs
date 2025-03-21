@@ -41,5 +41,7 @@ namespace CRUD04on
         // Fungsi untuk menampilkan data di DataGridView
         private void LoadData()
         {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
 
 }
