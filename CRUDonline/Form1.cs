@@ -34,4 +34,8 @@ namespace CRUD04on
             txtTELEPON.Clear();
             txtALAMAT.Clear();
 
+            //Fokus kembali ke NIM agar user siap memasukkan data baru
+            txtNIM.Focus();
+        }
+
 }
