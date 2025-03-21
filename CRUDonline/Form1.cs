@@ -137,4 +137,6 @@ namespace CRUD04on
                         {
                             MessageBox.Show("Data berhasil diperbarui!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             LoadData();
+                            ClearForm();
+                        }
 }
