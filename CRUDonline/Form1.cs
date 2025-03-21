@@ -11,5 +11,7 @@ using System.Windows.Forms;
 
 namespace CRUD04on
 {
+    public partial class Form1 : Form
+    {
 
 }
