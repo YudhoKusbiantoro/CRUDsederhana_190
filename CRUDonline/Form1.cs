@@ -15,6 +15,7 @@ namespace CRUD04on
     {
         private string connectionString = "Data Source=YUDHO\\YUDHO;Initial Catalog=CRUDSEDERHANA;Integrated Security=True";
 
-       
+        public Form1()
+        {
 
 }
