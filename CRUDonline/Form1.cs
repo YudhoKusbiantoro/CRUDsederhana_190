@@ -60,5 +60,9 @@ namespace CRUD04on
                 {
                     MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+        private void Tambah_click(object sender, EventArgs e)
+        {
 
 }
