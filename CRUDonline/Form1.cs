@@ -38,4 +38,8 @@ namespace CRUD04on
             txtNIM.Focus();
         }
 
+        // Fungsi untuk menampilkan data di DataGridView
+        private void LoadData()
+        {
+
 }
