@@ -22,4 +22,7 @@ namespace CRUD04on
         // Event saat form pertama kali dimuat
         private void Form1_Load(object sender, EventArgs e)
         {
+            LoadData();
+        }
+
 }
