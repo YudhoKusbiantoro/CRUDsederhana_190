@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDonline", "CRUDonline\CRUDonline.csproj", "{D091DF08-D049-4F59-9229-36BC4E668A39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D091DF08-D049-4F59-9229-36BC4E668A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D091DF08-D049-4F59-9229-36BC4E668A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D091DF08-D049-4F59-9229-36BC4E668A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D091DF08-D049-4F59-9229-36BC4E668A39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC3A1858-B06E-40A3-87F2-8AC979F4D6CA}
+	EndGlobalSection
+EndGlobal
