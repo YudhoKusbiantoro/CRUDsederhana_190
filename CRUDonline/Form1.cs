@@ -78,6 +78,7 @@ namespace CRUD04on
                     string query = "INSERT INTO Mahasiswa (NIM, Nama, Email, Telepon, Alamat) VALUES (@NIM, @Nama, @Email, @Telepon, @Alamat)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                       
+                        cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Nama", txtNAMA.Text.Trim());
 
 }
